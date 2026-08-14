@@ -1,0 +1,659 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Impressum der boolean UG, Berlin, Deutschland."
+  >
+
+  <title>Impressum | boolean UG</title>
+
+  <style>
+    :root {
+      --ink: #17324f;
+      --paper: #ffffff;
+      --soft: #f4f7fa;
+      --line: #cbd5df;
+      --max: 1180px;
+
+      --header-height: 78px;
+      --footer-height: 96px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* =====================================================
+       HEADER
+       ===================================================== */
+
+    header {
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: var(--header-height);
+
+      z-index: 1000;
+
+      background: rgba(255, 255, 255, 0.97);
+
+      border-bottom: 1px solid var(--line);
+
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 32px;
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 650;
+
+      letter-spacing: -1px;
+
+      white-space: nowrap;
+
+      color: #2563eb;
+    }
+
+    .nav-links {
+      display: flex;
+
+      gap: 30px;
+
+      font-size: 13px;
+      font-weight: 600;
+
+      letter-spacing: 0.04em;
+
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      transition: opacity 0.2s;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* =====================================================
+       MAIN
+       ===================================================== */
+
+    main {
+      padding-top: var(--header-height);
+      padding-bottom: var(--footer-height);
+    }
+
+    /* =====================================================
+       PAGE HERO
+       ===================================================== */
+
+    .page-header {
+      background: var(--soft);
+
+      border-bottom: 1px solid var(--line);
+
+      padding: 70px 0 65px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+
+      font-weight: 650;
+
+      letter-spacing: 0.13em;
+
+      text-transform: uppercase;
+
+      margin-bottom: 18px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--ink);
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(44px, 6vw, 68px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2.5px;
+
+      font-weight: 650;
+    }
+
+    .short-line {
+      width: 42px;
+
+      border-top: 1px solid var(--ink);
+
+      margin: 28px 0 0;
+    }
+
+    /* =====================================================
+       CONTENT
+       ===================================================== */
+
+    .content {
+      padding: 65px 0 80px;
+    }
+
+    .content-inner {
+      max-width: 850px;
+    }
+
+    .content h2 {
+      font-size: 25px;
+
+      line-height: 1.25;
+
+      letter-spacing: -0.5px;
+
+      margin: 42px 0 14px;
+    }
+
+    .content h2:first-child {
+      margin-top: 0;
+    }
+
+    .content h3 {
+      font-size: 18px;
+
+      margin: 28px 0 10px;
+    }
+
+    .content p {
+      margin: 0 0 18px;
+
+      font-size: 16px;
+    }
+
+    .content address {
+      font-style: normal;
+
+      margin-bottom: 20px;
+
+      font-size: 16px;
+    }
+
+    .content a {
+      color: var(--ink);
+
+      text-decoration: underline;
+
+      text-underline-offset: 3px;
+    }
+
+    .content a:hover {
+      opacity: 0.65;
+    }
+
+    .back-link {
+      display: inline-block;
+
+      margin-top: 25px;
+
+      font-size: 14px;
+
+      font-weight: 600;
+
+      text-decoration: none !important;
+    }
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    footer {
+      position: fixed;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: var(--footer-height);
+
+      z-index: 1000;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      font-size: 13px;
+
+      border-top: 1px solid var(--line);
+
+      background: rgba(255, 255, 255, 0.97);
+
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .footer-inner {
+      width: min(var(--max), calc(100% - 48px));
+
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      margin-top: 8px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 22px;
+    }
+
+    .footer-links a {
+      transition: opacity 0.2s;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* =====================================================
+       MOBILE
+       ===================================================== */
+
+    @media (max-width: 650px) {
+
+      :root {
+        --header-height: 70px;
+        --footer-height: 118px;
+      }
+
+      .container {
+        width: min(100% - 32px, var(--max));
+      }
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .page-header {
+        padding: 50px 0 45px;
+      }
+
+      h1 {
+        font-size: 46px;
+
+        letter-spacing: -2px;
+      }
+
+      .content {
+        padding: 45px 0 60px;
+      }
+
+      .content h2 {
+        font-size: 23px;
+      }
+
+      .content p,
+      .content address {
+        font-size: 15px;
+      }
+
+      footer {
+        height: var(--footer-height);
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+
+        gap: 8px 18px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       FIXED HEADER
+       ===================================================== -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+        boolean UG
+      </a>
+
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html#about">
+          About Us
+        </a>
+
+        <a href="index.html#services">
+          Services
+        </a>
+
+        <a href="index.html#expertise">
+          Expertise
+        </a>
+
+        <a href="index.html#approach">
+          Approach
+        </a>
+
+        <a href="index.html#contact">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+
+       <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+          <div class="container">
+      
+            <h1>Privacy Policy</h1>
+      
+            <div class="short-line"></div>
+      
+            <div class="policy-meta">
+              <span><strong>Version:</strong> 1.0</span>
+              <span><strong>Effective Date:</strong> July 18, 2026</span>
+              <span><strong>Last Updated:</strong> July 18, 2026</span>
+            </div>
+      
+          </div>
+        </section>
+      
+      
+        <!-- Privacy Policy -->
+        <section class="container content">
+      
+          <div class="content-inner">
+      
+            <h2>1. Overview</h2>
+      
+            <p>
+              We respect your privacy. This application does not use
+              analytics, advertising, or tracking technologies.
+            </p>
+      
+      
+            <h2>2. Data We Store</h2>
+      
+            <p>
+              We only store data that you explicitly create, upload, or
+              modify while using the application, including configuration
+              data, files, and application content.
+            </p>
+      
+      
+            <h2>3. User Control</h2>
+      
+            <p>
+              You have full control over your data. You may create,
+              update, or delete your data at any time within the
+              application.
+            </p>
+      
+      
+            <h2>4. Data Usage</h2>
+      
+            <p>
+              Data is used solely for providing application functionality
+              and is not used for analytics, marketing, or profiling.
+            </p>
+      
+      
+            <h2>5. Technical Information</h2>
+      
+            <p>
+              For security and operational purposes, basic technical
+              information such as IP address and request logs may be
+              temporarily processed.
+            </p>
+      
+      
+            <h2>6. Data Storage</h2>
+      
+            <p>
+              Data is stored in secure databases and file storage
+              systems managed by the application infrastructure.
+            </p>
+      
+      
+            <h2>7. Third-Party Services</h2>
+      
+            <p>
+              If applicable, third-party services, such as authentication
+              or payment providers, may process limited data required for
+              their functionality.
+            </p>
+      
+      
+            <h2>8. Data Sharing</h2>
+      
+            <p>
+              We do not sell or share user data with third parties except
+              where necessary for the operation and delivery of the
+              service.
+            </p>
+      
+      
+            <h2>9. Technical Data and Logging</h2>
+      
+            <p>
+              We collect technical logs when you use our platform. These
+              logs may include application events, user actions, error
+              reports, and performance data.
+            </p>
+      
+            <p>
+              This information is used solely to maintain, secure, and
+              improve the service, including debugging issues and
+              optimizing performance.
+            </p>
+      
+            <p>
+              We do not use this data for advertising or user profiling,
+              and we do not sell user data to third parties.
+            </p>
+      
+            <p>
+              Some logs may temporarily include user inputs when
+              necessary for troubleshooting technical issues.
+            </p>
+      
+      
+            <h2>10. Communications</h2>
+      
+            <p>
+              We may send you service-related communications, including
+              alerts, security notices, system updates, and transactional
+              messages related to your use of the platform.
+            </p>
+      
+      
+            <h2>11. Payments</h2>
+      
+            <p>
+              Payments are processed through third-party providers such
+              as Stripe. We may share necessary billing information with
+              these providers to process transactions.
+            </p>
+      
+      
+            <h2>12. Cookies and Local Storage</h2>
+      
+            <p>
+              The Service may use essential cookies and local storage to
+              enable authentication, maintain sessions, and ensure proper
+              functionality.
+            </p>
+      
+            <p>
+              No tracking or advertising cookies are used.
+            </p>
+      
+      
+            <h2>13. Product Updates</h2>
+      
+            <p>
+              We may send users emails regarding new features,
+              improvements, and product updates.
+            </p>
+      
+            <p>
+              Users may opt out of non-essential product update
+              communications by sending an email to
+              <a href="mailto:contact@booleancomputing.com">
+                contact@booleancomputing.com
+              </a>
+              or by using the unsubscribe link provided in such emails.
+            </p>
+      
+      
+            <h2>14. Contact</h2>
+      
+            <p>
+              If you have any questions regarding this Privacy Policy,
+              please contact us at:
+            </p>
+      
+            <div class="contact-card">
+      
+              <div class="contact-card-title">
+                Privacy &amp; Data Protection
+              </div>
+      
+              <a href="mailto:contact@booleancomputing.com">
+                contact@booleancomputing.com
+              </a>
+      
+            </div>
+      
+      
+            <div class="policy-updated">
+              Last updated: July 18, 2026
+            </div>
+
+      
+          </div>
+      
+        </section>
+      
+      </main>
+
+  <!-- =====================================================
+       FIXED FOOTER
+       ===================================================== -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+        © 2026 boolean UG. All rights reserved.
+      </div>
+
+      <div class="footer-links">
+
+        <a href="impressum.html">
+          Impressum
+        </a>
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
+

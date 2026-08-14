@@ -1,0 +1,636 @@
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Impressum der boolean UG, Berlin, Deutschland."
+  >
+
+  <title>Impressum | boolean UG</title>
+
+  <style>
+    :root {
+      --ink: #17324f;
+      --paper: #ffffff;
+      --soft: #f4f7fa;
+      --line: #cbd5df;
+      --max: 1180px;
+
+      --header-height: 78px;
+      --footer-height: 96px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* =====================================================
+       HEADER
+       ===================================================== */
+
+    header {
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: var(--header-height);
+
+      z-index: 1000;
+
+      background: rgba(255, 255, 255, 0.97);
+
+      border-bottom: 1px solid var(--line);
+
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 32px;
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 650;
+
+      letter-spacing: -1px;
+
+      white-space: nowrap;
+
+      color: var(--ink);
+    }
+
+    .nav-links {
+      display: flex;
+
+      gap: 30px;
+
+      font-size: 13px;
+      font-weight: 600;
+
+      letter-spacing: 0.04em;
+
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      transition: opacity 0.2s;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* =====================================================
+       MAIN
+       ===================================================== */
+
+    main {
+      padding-top: var(--header-height);
+      padding-bottom: var(--footer-height);
+    }
+
+    /* =====================================================
+       PAGE HERO
+       ===================================================== */
+
+    .page-header {
+      background: var(--soft);
+
+      border-bottom: 1px solid var(--line);
+
+      padding: 70px 0 65px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+
+      font-weight: 650;
+
+      letter-spacing: 0.13em;
+
+      text-transform: uppercase;
+
+      margin-bottom: 18px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--ink);
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(44px, 6vw, 68px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2.5px;
+
+      font-weight: 650;
+    }
+
+    .short-line {
+      width: 42px;
+
+      border-top: 1px solid var(--ink);
+
+      margin: 28px 0 0;
+    }
+
+    /* =====================================================
+       CONTENT
+       ===================================================== */
+
+    .content {
+      padding: 65px 0 80px;
+    }
+
+    .content-inner {
+      max-width: 850px;
+    }
+
+    .content h2 {
+      font-size: 25px;
+
+      line-height: 1.25;
+
+      letter-spacing: -0.5px;
+
+      margin: 42px 0 14px;
+    }
+
+    .content h2:first-child {
+      margin-top: 0;
+    }
+
+    .content h3 {
+      font-size: 18px;
+
+      margin: 28px 0 10px;
+    }
+
+    .content p {
+      margin: 0 0 18px;
+
+      font-size: 16px;
+    }
+
+    .content address {
+      font-style: normal;
+
+      margin-bottom: 20px;
+
+      font-size: 16px;
+    }
+
+    .content a {
+      color: var(--ink);
+
+      text-decoration: underline;
+
+      text-underline-offset: 3px;
+    }
+
+    .content a:hover {
+      opacity: 0.65;
+    }
+
+    .back-link {
+      display: inline-block;
+
+      margin-top: 25px;
+
+      font-size: 14px;
+
+      font-weight: 600;
+
+      text-decoration: none !important;
+    }
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    footer {
+      position: fixed;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: var(--footer-height);
+
+      z-index: 1000;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      font-size: 13px;
+
+      border-top: 1px solid var(--line);
+
+      background: rgba(255, 255, 255, 0.97);
+
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .footer-inner {
+      width: min(var(--max), calc(100% - 48px));
+
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      margin-top: 8px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 22px;
+    }
+
+    .footer-links a {
+      transition: opacity 0.2s;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* =====================================================
+       MOBILE
+       ===================================================== */
+
+    @media (max-width: 650px) {
+
+      :root {
+        --header-height: 70px;
+        --footer-height: 118px;
+      }
+
+      .container {
+        width: min(100% - 32px, var(--max));
+      }
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .page-header {
+        padding: 50px 0 45px;
+      }
+
+      h1 {
+        font-size: 46px;
+
+        letter-spacing: -2px;
+      }
+
+      .content {
+        padding: 45px 0 60px;
+      }
+
+      .content h2 {
+        font-size: 23px;
+      }
+
+      .content p,
+      .content address {
+        font-size: 15px;
+      }
+
+      footer {
+        height: var(--footer-height);
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+
+        gap: 8px 18px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       FIXED HEADER
+       ===================================================== -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+        boolean UG
+      </a>
+
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html#about">
+          About Us
+        </a>
+
+        <a href="index.html#services">
+          Services
+        </a>
+
+        <a href="index.html#expertise">
+          Expertise
+        </a>
+
+        <a href="index.html#approach">
+          Approach
+        </a>
+
+        <a href="index.html#contact">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+
+  <main>
+
+    <!-- Page heading -->
+
+    <section class="page-header">
+
+      <div class="container">
+
+        <div class="eyebrow">
+          boolean UG · Berlin · Germany
+        </div>
+
+        <h1>
+          Impressum
+        </h1>
+
+        <div class="short-line"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Legal content -->
+
+    <section class="container content">
+
+      <div class="content-inner">
+
+
+        <h2>
+          Angaben gemäß § 5 DDG
+        </h2>
+
+        <address>
+          <strong>boolean UG (haftungsbeschränkt)</strong><br>
+          Anschrift: GrünhoferWeg 44 13581, Deutschland
+
+          Registergericht: Berlin Charlottenburg
+
+          Registernummer: HRB 213340
+          </address>
+
+
+        <h2>
+          Vertreten durch
+        </h2>
+
+        <p>
+          Geschäftsführerin: Sai Velamuri
+        </p>
+
+
+        <h2>
+          Kontakt
+        </h2>
+
+        <p>
+
+          E-Mail:
+          <a href="mailto:contact@booleanug.com">
+            contact@booleanug.com
+          </a>
+          <br>
+
+          Website:
+          <a href="https://www.booleanug.com">
+            www.booleanug.com
+          </a>
+        </p>
+
+
+        <h2>
+          Registereintrag
+        </h2>
+
+        <p>
+          Registergericht:
+          Amtsgericht Berlin-Charlottenburg<br>
+
+          Registernummer:
+          [HRB-Nummer]
+        </p>
+
+
+        <h2>
+          Umsatzsteuer
+        </h2>
+
+        <p>
+          Umsatzsteuer-Identifikationsnummer gemäß
+          § 27a Umsatzsteuergesetz:
+        </p>
+
+        <p>
+          [USt-IdNr.]
+        </p>
+
+
+        <h2>
+          Verantwortlich für den Inhalt
+        </h2>
+
+        <p>
+          Verantwortlich für den Inhalt nach
+          § 18 Abs. 2 MStV:
+        </p>
+
+        <address>
+          Vasista Bhargava Polali<br>
+          [Straße und Hausnummer]<br>
+          [PLZ] Berlin<br>
+          Deutschland
+        </address>
+
+
+        <h2>
+          Haftung für Inhalte
+        </h2>
+
+        <p>
+          Als Diensteanbieter sind wir gemäß den allgemeinen
+          Gesetzen für eigene Inhalte auf diesen Seiten
+          verantwortlich. Wir sind jedoch nicht verpflichtet,
+          übermittelte oder gespeicherte fremde Informationen
+          zu überwachen oder nach Umständen zu forschen, die
+          auf eine rechtswidrige Tätigkeit hinweisen.
+        </p>
+
+
+        <h2>
+          Haftung für Links
+        </h2>
+
+        <p>
+          Unser Angebot enthält gegebenenfalls Links zu
+          externen Websites Dritter, auf deren Inhalte wir
+          keinen Einfluss haben. Deshalb können wir für diese
+          fremden Inhalte keine Gewähr übernehmen.
+        </p>
+
+        <p>
+          Für die Inhalte der verlinkten Seiten ist stets der
+          jeweilige Anbieter oder Betreiber verantwortlich.
+        </p>
+
+
+        <h2>
+          Urheberrecht
+        </h2>
+
+        <p>
+          Die durch den Seitenbetreiber erstellten Inhalte und
+          Werke auf diesen Seiten unterliegen dem deutschen
+          Urheberrecht.
+        </p>
+
+        <p>
+          Vervielfältigung, Bearbeitung, Verbreitung und jede
+          Art der Verwertung außerhalb der Grenzen des
+          Urheberrechts bedürfen der schriftlichen Zustimmung
+          des jeweiligen Autors bzw. Erstellers.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FIXED FOOTER
+       ===================================================== -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+        © 2026 boolean UG. All rights reserved.
+      </div>
+
+      <div class="footer-links">
+
+        <a href="impressum.html">
+          Impressum
+        </a>
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms &amp; Conditions
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
+```
